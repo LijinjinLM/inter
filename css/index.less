@@ -1,0 +1,130 @@
+@import "less/bootstrap";
+.top(@top){
+    top:@top;
+}
+body{
+    margin-top: 50px;
+}
+.log{
+    display: inline-block;
+    position: relative;
+    background:url('../img/hdr-spr.png') 0 -512px no-repeat;
+    height:43px;
+    width: 64px;
+    margin-top: 3px;
+}
+.row{
+   margin-top: 20px;
+}
+/*.col1{
+  margin-top: 20px;
+}*/
+.col1{
+  img{
+      height: 180px;
+      width: 140px;
+  }
+  .col1 ul li{
+     height:36px;
+ }
+}
+
+.col1_1{
+    border-right: 1px solid  #000000;
+}
+.myrow div{
+    margin-top: 50px;
+}
+.col2 ul li{
+    height:36px;
+}
+.col3 ul li{
+    margin-top: 8px;
+    height:36px;
+}
+.mak(){
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition:top 0.5s linear;
+    .mask2{
+      margin-left: 20px;
+    }
+}
+.masked{
+    position:relative;
+     .mask{
+        .top(81%);
+        .mak;
+         background: rgba(0,0,0,.5) ;
+        &:hover{
+         top:0;
+       }
+ }
+    .mask1{
+      .mak;
+      .top(65%);
+    }
+
+   /* .mask3{
+      .mak;
+      .top(5%);
+    }*/
+}
+/*
+.h{
+     margin-top: 250px;
+}
+*/
+
+.Int{
+    display: inline-block;
+    position: relative;
+    background:url('../img/social_sprite_smushed.png') 0 -70px no-repeat;
+    height:20px;
+    width:20px;
+}
+.weibo {
+    display: inline-block;
+    position: relative;
+    background: url('../img/social_sprite_smushed.png') 0 -770px no-repeat;
+    height: 20px;
+    width: 20px;
+
+}
+.main{
+   background:@blue-dark;
+ }
+.font-size(@font-size){
+  font-size:@font-size;
+}
+#login{width: 400px;height: 250px; padding-left: 20px;}
+@media (min-width: 320px) and (max-width: 667px) {
+  .mask1{
+    position:relative !important;
+  }
+  .mask2{
+    margin-top:15px;
+    h2{
+      .font-size(18px);
+    }
+    h5{
+      .font-size(5px);
+    }
+    .btn{
+      .font-size(5px);
+    }
+  }
+}
+.listed{
+  padding-left: 0;
+  list-style: none;
+  li {
+    height: 36px;
+    a{
+       color: #fff;
+    }
+  }
+}

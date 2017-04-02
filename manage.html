@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body{
+            margin-top: 80px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./user.html">零陵学院</a>
+            <button class="navbar-toggle" type="button" data-togger="#navbarHeader" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarHeader">
+            <ul class="nav navbar-nav ">
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-home">后台首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./manage.html">
+                        <span class="glyphicon glyphicon-user">用户管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-list-alt">内容管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-tags">标签管理</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        admin  <span class="caret" ></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">详情</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">留言</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-off"></span> 退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+        <div class="list-group" >
+            <a href="#tab1" class="list-group-item active "  data-toggle="tab">
+                用户管理
+            </a>
+            <a href="#tab2" class="list-group-item" data-toggle="tab">用户搜索</a>
+            <a href="#myModal" class="list-group-item"  data-toggle="modal">添加用户</a>
+        </div>
+</div>
+<div class="col-sm-10 tab-content">
+<div id="tab1" class="tab-pane fade in active">
+          <span class="lead">用户管理</span>
+          <a href="#myModal" class="btn btn-default pull-right" data-toggle="modal">添加用户</a>
+    <hr>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#gj" data-toggle="tab">用户列表</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <hr>
+        <div class="tab-pane active" id="gj">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>张一</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>李四</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>张三</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>李明</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>五五</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>六六</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>张三</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>张三</td>
+                    <td>111@qq.com</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-default" type="button" data-toggle="dropdown">
+                                操作<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">详情</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">留言</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+<div id="tab2" class="tab-pane fade in">
+    <span class="lead">用户搜索</span><hr>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#js" data-toggle="tab">搜索</a></li>
+    </ul>
+    <div class="tab-content">
+        <br/>
+        <div class="tab-pane active" id="js">
+            <div class="alert alert-info">
+                <b>技巧提示：</b>支持模糊搜索和匹配搜索，匹配搜索使用*代替!
+            </div>
+            <from >
+                <div class="form-group">
+                    <label for="nName" class="control-label">用户名</label>
+                    <input id="nName" class="form-control" type="text" placeholder="输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="nUID" class="control-label">UID</label>
+                    <input id="nUID" class="form-control" type="text" placeholder="输入UID">
+                </div>
+                <div class="form-group ">
+                     <label class="control-label">用户组</label>
+                     <select class="form-control" >
+                          <option>注册会员</option>
+                          <option>Another action</option>
+                          <option>Something else here</option>
+                     </select>
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </from>
+        </div>
+
+    </div>
+</div>
+<div class="modal" id="myModal">
+    <!--定位 模态框长宽高设置-->
+    <div class="modal-dialog">
+        <!--  模态框内容-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4>添加用户</h4>
+            </div>
+            <div class="modal-body">
+                <from >
+                    <div class="form-group">
+                        <label for="nName1" class="control-label">用户名</label>
+                        <input id="nName1" class="form-control" type="text" placeholder="输入用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码</label>
+                        <input id="password" class="form-control" type="password" placeholder="输入密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwords" class="control-label">确定密码</label>
+                        <input id="passwords" class="form-control" type="password" placeholder="输入确定密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="control-label">邮箱</label>
+                        <input id="email" class="form-control" type="email" placeholder="输入邮箱">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group ">
+                            <label class="control-label">用户组</label>
+                            <select class="form-control" >
+                                <option>注册会员</option>
+                                <option>Another action</option>
+                                <option>Something else here</option>
+                            </select>
+                        </div>
+                    </div>
+                </from>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>
